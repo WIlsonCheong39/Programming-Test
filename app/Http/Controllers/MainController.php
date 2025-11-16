@@ -24,7 +24,7 @@ class MainController extends Controller
 
         $cards = Card::all();
         if ($cards->count() < $playersCount) {
-           return back()->withErrors(['number' => 'Not enough cards for this number of players.']);
+           return back()->withErrors(['number' => 'Input value does not exist or value is invalid']);
         }
 
         //Shuffle cards randomly

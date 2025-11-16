@@ -5,7 +5,6 @@
         @if ($errors->any())
             <div class="alert alert-danger">
             <div class="alert alert-danger">
-                <strong>Whoops!</strong> Looks like something went wrong. Please refer to the list below and try again.
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
